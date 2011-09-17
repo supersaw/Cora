@@ -1,0 +1,40 @@
+2011/09/17 15:00:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /Users/Vineeth/projects/cora/framework/web/CController.php:477
+Stack trace:
+#0 /Users/Vineeth/projects/cora/framework/web/CController.php(262): CController->missingAction('')
+#1 /Users/Vineeth/projects/cora/framework/web/CWebApplication.php(277): CController->run('')
+#2 /Users/Vineeth/projects/cora/framework/web/CWebApplication.php(136): CWebApplication->runController('messages')
+#3 /Users/Vineeth/projects/cora/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#4 /Users/Vineeth/projects/cora/app/index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/index.php?r=messages
+2011/09/17 15:00:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "new".' in /Users/Vineeth/projects/cora/framework/web/CController.php:477
+Stack trace:
+#0 /Users/Vineeth/projects/cora/framework/web/CController.php(262): CController->missingAction('new')
+#1 /Users/Vineeth/projects/cora/framework/web/CWebApplication.php(277): CController->run('new')
+#2 /Users/Vineeth/projects/cora/framework/web/CWebApplication.php(136): CWebApplication->runController('messages/new')
+#3 /Users/Vineeth/projects/cora/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#4 /Users/Vineeth/projects/cora/app/index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/index.php?r=messages/new
+2011/09/17 15:04:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "new".' in /Users/Vineeth/projects/cora/framework/web/CController.php:477
+Stack trace:
+#0 /Users/Vineeth/projects/cora/framework/web/CController.php(262): CController->missingAction('new')
+#1 /Users/Vineeth/projects/cora/framework/web/CWebApplication.php(277): CController->run('new')
+#2 /Users/Vineeth/projects/cora/framework/web/CWebApplication.php(136): CWebApplication->runController('messages/new')
+#3 /Users/Vineeth/projects/cora/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#4 /Users/Vineeth/projects/cora/app/index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/index.php?r=messages/new
+2011/09/17 15:09:35 [error] [php] Use of undefined constant php - assumed 'php' (/Users/Vineeth/projects/cora/app/protected/views/layouts/main.php:1)
+Stack trace:
+#0 /Users/Vineeth/projects/cora/framework/web/CController.php(781): MessagesController->renderFile()
+#1 /Users/Vineeth/projects/cora/app/protected/controllers/MessagesController.php(5): MessagesController->render()
+#2 /Users/Vineeth/projects/cora/framework/web/actions/CInlineAction.php(50): MessagesController->actionNew()
+#3 /Users/Vineeth/projects/cora/framework/web/CController.php(300): CInlineAction->runWithParams()
+#4 /Users/Vineeth/projects/cora/framework/web/CController.php(278): MessagesController->runAction()
+#5 /Users/Vineeth/projects/cora/framework/web/CController.php(257): MessagesController->runActionWithFilters()
+#6 /Users/Vineeth/projects/cora/framework/web/CWebApplication.php(277): MessagesController->run()
+#7 /Users/Vineeth/projects/cora/framework/web/CWebApplication.php(136): CWebApplication->runController()
+#8 /Users/Vineeth/projects/cora/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#9 /Users/Vineeth/projects/cora/app/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=messages/new
+in /Users/Vineeth/projects/cora/app/protected/views/layouts/main.php (1)
+in /Users/Vineeth/projects/cora/app/protected/controllers/MessagesController.php (5)
+in /Users/Vineeth/projects/cora/app/index.php (13)
